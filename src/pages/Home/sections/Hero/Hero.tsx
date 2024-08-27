@@ -47,7 +47,7 @@ const Hero = () => {
                        <Typography color="primary.contrastText" variant="h2" textAlign="center">I'm a Software Engineer</Typography>
                        <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => console.log("download")}>
+                                <StyledButton href="/Curriculo_GabrielMassaia_Desenvolvedor.pdf" download>
                                     <DownloadIcon/>
                                     <Typography>
                                     Dowload CV
@@ -55,7 +55,7 @@ const Hero = () => {
                                 </StyledButton>
                             </Grid>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => console.log("contact Me")}>
+                                <StyledButton onClick={() => window.location.href = 'mailto:gabrielmassaia50@gmail.com'}>
                                 <MailOutlineIcon/>
                                 <Typography>
                                 Contact me!
